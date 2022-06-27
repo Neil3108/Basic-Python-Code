@@ -17,7 +17,7 @@ match c:
     case "*":
         print(int(a) * int(b))
     case "/":
-        print(int(a) / int(b))
+        print(float(a) / float(b))
     case "**":
         print(int(a) ** int(b))
     case _:
