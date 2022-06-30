@@ -4,10 +4,10 @@ import threading
 import time
 from functools import reduce
 
-a = input("Enter the first number: ")
-b = input("Enter the second number: ")
+a = input("Enter the first number: ") # First number
+b = input("Enter the second number: ") # Second number
 
-c = input("Enter operations (+,-,*,/,**): ")
+c = input("Enter operations (+,-,*,/,**): ") # Operation input
 
 match c:
     case "+":
