@@ -22,6 +22,8 @@ def getSymbols():
 
     return symbolList
 
+
+# Generates sequences for 3 symbols
 def generateSequences(symbols):
     sequences = []
     for symbols0 in symbols:
