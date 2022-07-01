@@ -46,6 +46,10 @@ def printBoard():
         if int(i)%3 == 0:
             print()
 
+def clearBoard():
+    for i in board:
+        board[i] = ' '
+
 def playGame():
     counter = 0
     symbol = 'x'
@@ -71,5 +75,10 @@ def playGame():
 
 def main():
     playGame()
+    playAgain = input("Would you like to play again?(Y/N)\n")
+    while playAgain == 'Y':
+        clearBoard()
+        playGame()
+        playAgain = input("Would you like to play again?(Y/N)\n")
 
 main()
