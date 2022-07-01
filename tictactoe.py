@@ -14,21 +14,21 @@ def checkWinner():
     if board['1'] == board['2'] == board['3']:
         print(board['1'] + "Wins!")
     elif board['4'] == board['5'] == board['6']:
-        print(board['1'] + "Wins!")
+        print(board['4'] + "Wins!")
     elif board['7'] == board['8'] == board['9']:
+        print(board['7'] + "Wins!")
+    elif board['1'] == board['4'] == board['7']:
         print(board['1'] + "Wins!")
-    elif board['1'] == board['2'] == board['3']:
+    elif board['2'] == board['5'] == board['8']:
+        print(board['2'] + "Wins!")
+    elif board['3'] == board['6'] == board['9']:
+        print(board['3'] + "Wins!")
+    elif board['1'] == board['5'] == board['9']:
         print(board['1'] + "Wins!")
-    elif board['1'] == board['2'] == board['3']:
-        print(board['1'] + "Wins!")
-    elif board['1'] == board['2'] == board['3']:
-        print(board['1'] + "Wins!")
-    elif board['1'] == board['2'] == board['3']:
-        print(board['1'] + "Wins!")
-    elif board['1'] == board['2'] == board['3']:
-        print(board['1'] + "Wins!")
-def main():
+    elif board['3'] == board['5'] == board['7']:
+        print(board['3'] + "Wins!")
 
+def main():
 
 
 main()
