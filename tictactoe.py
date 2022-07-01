@@ -28,7 +28,12 @@ def checkWinner():
     elif board['3'] == board['5'] == board['7']:
         print(board['3'] + "Wins!")
 
-def main():
 
+
+def main():
+    for i in board:
+        print(board[i]+"|", end="")
+        if int(i)%3 == 0:
+            print()
 
 main()
