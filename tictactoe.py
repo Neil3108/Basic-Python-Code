@@ -57,10 +57,12 @@ def playGame():
     while counter < 9:
         printBoard()
         move = input()
-        counter += 1
 
         if board[move] == ' ':
+            counter += 1
             board[move] = symbol
+        else:
+            print("That spot is already taken!")
         if counter >= 5:
             winner = checkWinner()
         if winner:
