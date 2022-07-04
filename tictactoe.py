@@ -54,6 +54,7 @@ def playGame():
     counter = 0
     symbol = 'x'
     winner = False
+    validMove = False
     while counter < 9:
         printBoard()
         move = input()
@@ -61,16 +62,18 @@ def playGame():
         if board[move] == ' ':
             counter += 1
             board[move] = symbol
+            validMove = True
         else:
             print("That spot is already taken!")
+            validMove = False
         if counter >= 5:
             winner = checkWinner()
         if winner:
             printBoard()
             break
-        if symbol == 'x':
+        if symbol == 'x' and validMove:
             symbol = 'o'
-        else:
+        elif symbol == 'o' and validMove:
             symbol = 'x'
     if counter == 9 & winner == False:
         print("Its a tie!")
