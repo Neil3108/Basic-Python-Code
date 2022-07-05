@@ -80,11 +80,13 @@ def playGame():
 
 def main():
     playGame()
-    playAgain = input("Would you like to play again?(Y/N)\n")
-    while playAgain == 'Y' or playAgain == 'y':
-        clearBoard()
-        playGame()
+    while True:
         playAgain = input("Would you like to play again?(Y/N)\n")
+        if playAgain == 'Y' or playAgain == 'y':
+            clearBoard()
+            playGame()
+        else:
+            break
 
     print("Thank you for playing!")
 
